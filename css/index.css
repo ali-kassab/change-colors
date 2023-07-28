@@ -1,0 +1,106 @@
+* {
+  padding: 0%;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: #c1d0b5;
+}
+
+.main {
+  background-color: #c1d0b5;
+  border-radius: 5px;
+
+  /* height: 80vh; */
+  /* width: 80vw;  */
+  display: grid;
+  grid-template-columns: 5fr 3fr;
+}
+.image {
+  margin: 5px 0;
+  background-color: #99a98f;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 50px;
+  width: 50vw;
+  padding: 10px;
+  border-radius: 30px;
+}
+
+.filters {
+  margin: 5px 0;
+  border-radius: 30px;
+  background-color: #c1d0b5;
+  width: 35vw;
+}
+
+.img img,
+canvas {
+  max-width: 40vw;
+  max-height: 60vh;
+}
+
+.filterInput {
+  margin: 0 10px;
+  cursor: pointer;
+  
+
+}
+
+
+
+label {
+  border-radius: 10px;
+  padding: 5px;
+  color: black;
+  text-transform: capitalize;
+  font-weight: 600;
+}
+.chooseFile {
+  background-color: #c1d0b5;
+  padding: 40px;
+  cursor: pointer;
+  transition: all 0.5s;
+}
+.chooseFile:hover {
+  transform: scale(1.2);
+  color: #fff;
+}
+/* #uploadbtn {
+  
+  cursor: pointer;
+  border: 2px solid #fff;
+  border-radius: 10px;
+} */
+.filters ul {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+.filters ul li {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.filters ul li:last-child {
+  flex-direction: row;
+  justify-content: space-around;
+  color: #fff;
+}
+.filters ul li a,
+span {
+  background-color: #99a98f;
+  padding: 10px 20px;
+  border-radius: 10px;
+  cursor: pointer;
+  color: black !important;
+  transition: all 0.5s;
+}
+.filters ul li a:hover,
+span:hover {
+  transform: scale(1.2);
+color: #fff!important;
+}

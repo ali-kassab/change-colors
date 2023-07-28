@@ -1,0 +1,44 @@
+@media screen and (max-width: 768px) {
+    .main {
+      grid-template-columns: none;
+    }
+    .image {
+      margin-top: 5px;
+      min-height: 170px;
+      border-radius: 13px;
+      width: 100%;
+
+    }
+  .chooseFile{
+    padding: 12px;
+  }
+    .filters {
+      margin: 0;
+      border-radius: 14px;
+      width: 100%;
+      margin-top: 5px;
+    }
+    ul li label {
+      text-align: center;
+      font-size: larger;
+    }
+  }
+   @media screen and (min-width: 769px) and (max-width: 1024px) { 
+    .image {
+      width: 50vw;
+    }
+    .filters {
+      width: 35vw;
+    }
+  
+    ul li label {
+      text-align: center;
+      font-size: larger;
+    }
+  }  
+  
+
+
+
+
+

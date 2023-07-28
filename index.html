@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+
+    <link rel="stylesheet" href="css/all.min.css" />
+    <link rel="stylesheet" href="css/index.css" />
+    <link rel="stylesheet" href="css/mediaQuery.css" />
+    
+    
+    <title>change pic</title>
+  </head>
+  <body>
+    <div class="main container">
+      <div class="image">
+        <div class="img" id="boxImage">
+          <canvas></canvas>
+          <img id="img" />
+        </div>
+        <div class="upload">
+          <!-- <button  id="uploadbtn">upload</button> -->
+          <label for="uploadInpute" id="uploadLabel" class="chooseFile my-2"><i class="fa-solid fa-magnifying-glass"></i> choose file</label
+          >
+          <input id="uploadInpute" class="d-none" type="file" />
+        </div>
+      </div>
+      <div class="filters">
+        <ul>
+          <li>
+            <label for="saturate">saturate</label>
+            <input
+              class="filterInput"
+              type="range"
+              id="saturate"
+              min="0"
+              max="200"
+              value="100"
+            />
+          </li>
+          <li>
+            <label for="contrast">contrast</label>
+            <input
+              class="filterInput"
+              type="range"
+              id="contrast"
+              min="0"
+              max="200"
+              value="100"
+            />
+          </li>
+          <li>
+            <label for="brightness">brightness</label>
+            <input
+              class="filterInput"
+              type="range"
+              id="brightness"
+              min="0"
+              max="200"
+              value="100"
+            />
+          </li>
+          <li>
+            <label for="sepia">sepia</label>
+            <input
+              class="filterInput"
+              type="range"
+              id="sepia"
+              min="0"
+              max="200"
+              value="0"
+            />
+          </li>
+          <li>
+            <label for="grayscale">Grayscale</label>
+            <input
+              class="filterInput"
+              type="range"
+              id="grayscale"
+              step="0.1"
+              min="0"
+              max="1"
+              value="0"
+            />
+          </li>
+          <li>
+            <label for="blur">Blur</label>
+            <input
+              class="filterInput"
+              type="range"
+              id="blur"
+              step="0.1"
+              min="0"
+              max="10"
+              value="0"
+            />
+          </li>
+          <li>
+            <label for="hue-rotate">Hue-Rotate</label>
+            <input
+              class="filterInput"
+              type="range"
+              id="huerotate"
+              min="0"
+              max="300"
+              value="0"
+            />
+          </li>
+          <li>
+            <label for="invert">invert</label>
+            <input
+              class="filterInput"
+              type="range"
+              id="invert"
+              min="0"
+              max="200"
+              value="100"
+            />
+          </li>
+
+          <li>
+            <a download="true" id="download"><i class="fa-solid fa-download"></i></i>   Download</a>
+
+            <span id="reset" onclick="resetValue()"> <i class="fa-solid fa-sliders"></i> Reset</span>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <script src="js/jquery-3.7.0.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/index.js"></script>
+  </body>
+</html>
